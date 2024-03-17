@@ -4,7 +4,7 @@ import os
 
 
 userprofile=os.path.join('Memories', 'user_profile.txt')
-r_writer = os.path.join('system prompts', 'resume writer')
+r_writer = os.path.join('system prompts', 'writer')
 
 def resume_writer():
     # Prepare the data to be sent to the profiling module

@@ -52,7 +52,7 @@ check_file(os.path.join('Memories', 'chatlog.txt'))
 userprofile=os.path.join('Memories', 'user_profile.txt')
 prompt = st.chat_input(key="propmt")
 Profile_update = os.path.join('system prompts', 'User_update.md')
-persona = os.path.join('Personas', 'Zara.md')
+persona = os.path.join('Personas', 'interviewer.md')
 User_pro = open_file(userprofile)
 Profile_check = Profile_update+User_pro
 Chatlog_loc = os.path.join('Memories', 'chatlog.txt')

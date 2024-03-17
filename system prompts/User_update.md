@@ -26,56 +26,82 @@ Analyze a user message and update user profile with new information, adhering st
     "name": "",
     "age": 0,
     "gender": "",
-    "location": ""
-  },
-  "preferences": {
-    "food": {
-      "likes": [],
-      "dislikes": []
-    },
-    "music": {
-      "genres": [],
-      "artists": []
-    },
-    "hobbies": [],
-    "entertainment": {
-      "movies": [],
-      "tvShows": [],
-      "books": [],
-      "games": []
+    "location": "",
+    "contact_info": {
+      "email": "",
+      "phone_number": ""
     }
   },
-  "personal_values": {
-    "important_life_events": [],
-    "goals": {
+  "professional_history": {
+    "current_position": {
+      "title": "",
+      "company": "",
+      "start_date": "",
+      "end_date": "",
+      "responsibilities": [],
+      "achievements": []
+    },
+    "past_positions": [
+      {
+        "title": "",
+        "company": "",
+        "start_date": "",
+        "end_date": "",
+        "responsibilities": [],
+        "achievements": []
+      }
+    ]
+  },
+  "education": {
+    "highest_degree": "",
+    "fields_of_study": [],
+    "institutions": [
+      {
+        "name": "",
+        "degree": "",
+        "field_of_study": "",
+        "graduation_year": 0
+      }
+    ],
+    "certifications": [
+      {
+        "name": "",
+        "issuing_organization": "",
+        "date_obtained": "",
+        "valid_until": ""
+      }
+    ]
+  },
+  "skills": {
+    "hard_skills": [],
+    "soft_skills": [],
+    "languages": [],
+    "technological_proficiency": []
+  },
+  "professional_interests": {
+    "industry_interests": [],
+    "professional_goals": {
       "short_term": [],
       "long_term": []
     },
-    "aspirations": [],
-    "fears": [],
-    "motivations": []
+    "aspirations": []
   },
-  "interpersonal_relations": {
-    "family": [],
-    "friends": [],
-    "relationship_status": ""
-  },
-  "communication_preferences": {
-    "preferred_channels": [],
-    "communication_style": ""
-  },
-  "experience_and_memories": {
-    "memorable_moments": [],
-    "lessons_learned": [],
-    "life_changing_experiences": []
-  },
-  "desires_and_needs": {
-    "emotional_needs": [],
-    "physical_needs": [],
-    "intellectual_needs": [],
-    "spiritual_needs": []
+  "network": {
+    "professional_associations": [],
+    "mentors": [],
+    "references": [
+      {
+        "name": "",
+        "relationship": "",
+        "contact_info": {
+          "email": "",
+          "phone_number": ""
+        }
+      }
+    ]
   }
 }
 
 <USER PROFILE END>
+
 ```
