@@ -48,7 +48,7 @@ The project is divided into two primary sections:
   Launch the application with Streamlit using:
 
   ```
-  streamlit run your_script_name.py
+  streamlit run app.py
   ```
 
   Interact with the Chatbot via the Streamlit interface.
