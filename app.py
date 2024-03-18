@@ -49,14 +49,16 @@ def update_profile():
 load_dotenv()
 check_file(os.path.join('Memories', 'user_profile.txt'))
 check_file(os.path.join('Memories', 'chatlog.txt'))
+openai.api_key = os.getenv("OPENAI_API_KEY")
+
 userprofile=os.path.join('Memories', 'user_profile.txt')
 prompt = st.chat_input(key="propmt")
-Profile_update = os.path.join('system prompts', 'User_update.md')
-persona = os.path.join('Personas', 'interviewer.md')
+Profile_update = open_file(os.path.join('system prompts', 'User_update.md'))
+persona = open_file(os.path.join('Personas', 'interviewer.md'))
 User_pro = open_file(userprofile)
 Profile_check = Profile_update+User_pro
 Chatlog_loc = os.path.join('Memories', 'chatlog.txt')
-
+content = persona + User_pro
 
 if "Startup" not in st.session_state:
     st.session_state['Startup'] = "done"
@@ -88,7 +90,7 @@ if prompt:
     # followed by the actual chat messages exchanged in the session.
     system_prompt = {
         "role": "system",
-        "content": persona
+        "content": content
     }
     messages_for_api = [system_prompt] + st.session_state.messages
      
